@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen",    "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  color: #3d155f;
+  background-color: #F9F9F9;
 }
 
 a, a:visited {
@@ -66,6 +68,16 @@ a, a:visited {
 
 ul li {
   list-style: none; }
+
+input:focus, textarea:focus, select:focus{
+  outline: none;}
+
+::placeholder {
+    color: rgba(61, 21, 95, 0.5);
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
+  }
 
 
 
@@ -339,11 +351,126 @@ ul.header__social-contact li:first-child {
   margin: 0 auto;
 }
 
+.contact__form label {
+  color: rgba(61, 21, 95, 0.5);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
 .form-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
+.contact__form-field {
+  border-bottom: 1px solid rgba(61, 21, 95, 0.5);
+  background-color: #F9F9F9;
+  color: rgba(61, 21, 95, 0.5);
+  font-size: 18px;
+  font: 200;
+  line-height: 27px;
+  padding: 10px 10px 10px 0px;
+  cursor: text;
+  width: 300px;
+  
+}
+
+.contact__form textarea {
+  height: 75px;
+  border-bottom: 1px solid rgba(61, 21, 95, 0.5);
+  background-color: #F9F9F9;
+  color: rgba(61, 21, 95, 0.5);
+  font-size: 18px;
+  font: 200;
+  line-height: 27px;
+  padding: 10px 10px 0px 0px;
+  cursor: text;
+  width: 100%;
+}
+
+/* .form-btn-send {
+  width: 300px;
+  padding: 15px 40px;
+  border: 1px solid rgb(72, 49, 212);
+  color: #4831d4;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+} */
+
+.form-btn-send:hover{
+  transform: translateY(0);
+  --n: 1;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+
+.form-btn-send {
+  --c: #4831d4;
+  color: var(--c);
+  font-size: 16px;
+  border: 1px solid var(--c);
+  /* border-radius: 0.5em; */
+  /* width: 12em;
+  height: 3em; */
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.form-btn-send span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.form-btn-send:hover {
+  color: #fff;
+}
+
+.form-btn-send:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.form-btn-send span:nth-child(1) {
+  --n: 1;
+}
+
+.form-btn-send span:nth-child(2) {
+  --n: 2;
+}
+
+.form-btn-send span:nth-child(3) {
+  --n: 3;
+}
+
+.form-btn-send span:nth-child(4) {
+  --n: 4;
+}
 
 
 

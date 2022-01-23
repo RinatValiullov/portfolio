@@ -89,7 +89,7 @@
                 </article>          
             </div> 
         </section>
-        <section class="contact" style="border: 1px solid red;">
+        <section class="contact">
             <div class="contact__wrap">
                 <article style="margin-bottom: 100px;">
                     <div>
@@ -102,18 +102,24 @@
                     <div class="form-row">
                         <div style="display: flex; flex-direction: column;">
                             <label for="full-name">Yout name</label>
-                            <input type="text" placeholder="Enter your name" id="full-name">
+                            <input type="text" placeholder="Enter your name" id="full-name" class="contact__form-field">
                         </div>
                         <div style="display: flex; flex-direction: column;">
                             <label for="full-name">Email Address</label>
-                            <input type="text" placeholder="Enter your email address" id="full-name">
+                            <input type="text" placeholder="Enter your email address" id="full-name" class="contact__form-field">
                         </div>
                     </div>
-                    <div class="form-row-msg">
-                        <div>
+                    <div class="form-row">
+                        <div style="width: 100%; display:flex; position: relative; flex-direction:column">
                             <label for="Your message"></label>
                             <textarea name="" id="" cols="30" rows="7" minlength="30" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"></textarea>
                         </div>
+                    </div>
+                    <div class="form-btn">
+                        <button class="form-btn-send">
+                            Send
+                            <span></span><span></span><span></span><span></span>
+                        </button>
                     </div>
                 </form>
             </div>
