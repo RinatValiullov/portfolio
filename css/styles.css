@@ -1,5 +1,5 @@
 /* Обнуление*/
-/* 
+/*
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -52,35 +52,39 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit; } */
 
 * {
-    padding: 0;
-    margin: 0;
-    border: 0; }
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
 
 body {
-  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen",    "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
   color: #3d155f;
   background-color: #F9F9F9;
 }
 
-a, a:visited {
- text-decoration: none; }  
+a,
+a:visited {
+  text-decoration: none;
+}
 
 ul li {
-  list-style: none; }
+  list-style: none;
+}
 
-input:focus, textarea:focus, select:focus{
-  outline: none;}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
 
 ::placeholder {
-    color: rgba(61, 21, 95, 0.5);
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 27px;
-  }
-
-
-
+  color: rgba(61, 21, 95, 0.5);
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+}
 
 .header {
   position: fixed;
@@ -90,12 +94,12 @@ input:focus, textarea:focus, select:focus{
   /* border: 2px solid white; */
 }
 
-.header__wrap{
+.header__wrap {
   position: relative;
   height: 100px;
   width: 1400px;
   margin: 0 auto;
- 
+
 }
 
 .header__list {
@@ -113,14 +117,15 @@ input:focus, textarea:focus, select:focus{
   z-index: 999;
   visibility: hidden;
 }
-.location{
+
+.location {
   font-size: 15px;
   line-height: 15px;
-  display: block; 
+  display: block;
   color: white;
-  background: url(../img/google-maps16.png) no-repeat;
+  background: url(../assets/img/google-maps16.png) no-repeat;
   padding-left: 20px;
-  color:#ccf381;
+  color: #ccf381;
   margin-top: 10px;
   margin-bottom: 80px;
 }
@@ -132,12 +137,12 @@ input:focus, textarea:focus, select:focus{
   font-weight: 400;
 }
 
-.resume{
+.resume {
   display: flex;
   justify-content: space-between;
 }
 
-.resume_link{
+.resume_link {
   display: block;
   font-weight: 400;
   width: 120px;
@@ -145,12 +150,13 @@ input:focus, textarea:focus, select:focus{
   line-height: 16px;
   text-align: center;
   color: #ccf381;
-  background: url(../img/download.png) no-repeat;
+  background: url(../assets/img/download.png) no-repeat;
   padding-left: 15px;
-  /* background-color: #ccf381; */  
+  /* background-color: #ccf381; */
   /* border: 1px solid red; */
 }
-.resume_mail{
+
+.resume_mail {
   display: block;
   font-weight: 400;
   width: 120px;
@@ -158,9 +164,10 @@ input:focus, textarea:focus, select:focus{
   line-height: 16px;
   text-align: center;
   color: #ccf381;
-  background: url(../img/gmail.png) no-repeat;
+  background: url(../assets/img/gmail.png) no-repeat;
 }
-.resume_telegram{
+
+.resume_telegram {
   display: block;
   font-weight: 400;
   width: 120px;
@@ -168,7 +175,7 @@ input:focus, textarea:focus, select:focus{
   line-height: 16px;
   text-align: center;
   color: #ccf381;
-  background: url(../img/telegram.png) no-repeat;
+  background: url(../assets/img/telegram.png) no-repeat;
 }
 
 .header__basic-say-hello {
@@ -235,7 +242,7 @@ ul.header__social-contact li {
 
 ul.header__social-contact li:first-child {
   margin-left: 0px;
-} 
+}
 
 
 /* intro section start */
@@ -252,7 +259,7 @@ ul.header__social-contact li:first-child {
 }
 
 .intro__wrap-desc {
-  
+
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -275,14 +282,14 @@ ul.header__social-contact li:first-child {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 25px;
-  
+
 }
 
 .my_skills {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
-  
+
 }
 
 .my_skills_all {
@@ -314,8 +321,8 @@ ul.header__social-contact li:first-child {
 .myPic-icon {
   position: absolute;
   top: 0px;
-  left: 20px; 
-  width: 250px;  
+  left: 20px;
+  width: 250px;
 }
 
 /* intro section end */
@@ -327,21 +334,23 @@ ul.header__social-contact li:first-child {
   margin: 0 auto;
 
 }
-.skills__wrap{
+
+.skills__wrap {
   display: flex;
   justify-content: space-around;
 }
-.skils__title{
+
+.skils__title {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 
-.skills li{
+.skills li {
   min-height: 70px;
- 
-  
+
+
   padding-left: 70px;
   margin-top: 20px;
   /* border: 1px solid red; */
@@ -365,10 +374,10 @@ ul.header__social-contact li:first-child {
   column-gap: 10px;
   align-items: center;
   justify-items: center;
-   
+
 }
 
-.work__examples-link{
+.work__examples-link {
   display: block;
   height: 300px;
   width: 350px;
@@ -385,7 +394,7 @@ ul.header__social-contact li:first-child {
 }
 
 .work__examples-pic {
- max-width: 350px;
+  max-width: 350px;
 }
 
 
@@ -434,13 +443,13 @@ ul.header__social-contact li:first-child {
   position: absolute;
   right: 80px;
   top: 30px;
-  
+
 }
 
 .square-of-dots-last {
   position: absolute;
   left: 50px;
-  top: 50px; 
+  top: 50px;
 }
 
 /* about section end */
@@ -449,6 +458,7 @@ ul.header__social-contact li:first-child {
 .contact {
   height: 100vh;
 }
+
 .contact__wrap {
   max-width: 1060px;
   margin: 0 auto;
@@ -502,7 +512,7 @@ ul.header__social-contact li:first-child {
   padding: 10px 10px 10px 0px;
   cursor: text;
   width: 300px;
-  
+
 }
 
 .contact__form textarea {
@@ -529,7 +539,7 @@ ul.header__social-contact li:first-child {
   text-transform: uppercase;
 } */
 
-.form-btn-send:hover{
+.form-btn-send:hover {
   transform: translateY(0);
   --n: 1;
 }
@@ -627,8 +637,8 @@ ul.header__social-contact li:first-child {
 .footer__main {
   display: flex;
   padding: 60px 40px 40px 60px;
-  justify-content:left  
-  /* align-items: center; */
+  justify-content: left
+    /* align-items: center; */
 }
 
 .basic-contact {
@@ -646,25 +656,22 @@ ul.header__social-contact li:first-child {
   line-height: 45px;
 }
 
-.footer__basic-link{
+.footer__basic-link {
   font-size: 21px;
   color: rgb(186, 221, 118);
   line-height: 52px;
   font-weight: 500;
-  
+
 }
-.footer__list{
+
+.footer__list {
   color: rgb(186, 221, 118);
   min-height: 250px;
 }
 
-.footer__basic-item{
+.footer__basic-item {
   color: inherit;
   font-size: 21px;
   line-height: 52px;
   font-weight: 400;
 }
-
-
-
-
